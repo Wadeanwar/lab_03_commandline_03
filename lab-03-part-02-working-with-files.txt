@@ -37,8 +37,13 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
-
+Adlm			Music			isus
+Applications		Pictures		mtec1002-lab-03
+Desktop			Public			mtec1002-lab-03.tar.gz
+Documents		QLData			pymel.log
+Downloads		Things			xgen
+Library			foo.txt
+Movies			ipe.properties
 ==========
 7. Create another new file using touch.
 
@@ -53,7 +58,13 @@ $ touch bar.txt
 Copy and paste the output below.
 ----------
 
-
+Adlm			Music			ipe.properties
+Applications		Pictures		isus
+Desktop			Public			mtec1002-lab-03
+Documents		QLData			mtec1002-lab-03.tar.gz
+Downloads		Things			pymel.log
+Library			bar.txt			xgen
+Movies			foo.txt
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
@@ -61,14 +72,29 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
-
+cp bar.txt baz.txt
+v314-ent-007:~ student$ ls
+Adlm			Music			foo.txt
+Applications		Pictures		ipe.properties
+Desktop			Public			isus
+Documents		QLData			mtec1002-lab-03
+Downloads		Things			mtec1002-lab-03.tar.gz
+Library			bar.txt			pymel.log
+Movies			baz.txt			xgen
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
-----------
+----------rm bar.txt
+v314-ent-007:~ student$ ls
+Adlm			Music			ipe.properties
+Applications		Pictures		isus
+Desktop			Public			mtec1002-lab-03
+Documents		QLData			mtec1002-lab-03.tar.gz
+Downloads		Things			pymel.log
+Library			baz.txt			xgen
+Movies			foo.txt
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
@@ -76,21 +102,33 @@ Write the command that you used to remove the file.  Copy and paste the output o
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
 
-
+mv foo.txt to qux.txt
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+v314-ent-007:~ student$ ls
+Adlm			Music			ipe.properties
+Applications		Pictures		isus
+Desktop			Public			mtec1002-lab-03
+Documents		QLData			mtec1002-lab-03.tar.gz
+Downloads		Things			pymel.log
+Library			baz.txt			xgen
+Movies			foo.txt
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
 [NO OUTPUT]
 ----------
-
-
+student$ cd mtec1002-lab-03
+v314-ent-007:mtec1002-lab-03 student$
 
 ==========
 13. Try removing the directory called my_files using rmdir.
 
 Write out the command that you used and what happened.
 ----------
-
+student$ rmdir my_files
+rm: my_files: No such file or directory
+nothing happens
 
 
 ==========
@@ -98,9 +136,10 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
+student$ rm my_files
+rm: my_files: No such file or directory
 
-
-
+Nothing happened.
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
 
@@ -108,7 +147,7 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
-
+v314-ent-007:mtec1002-lab-03 student$ rm -rf my_files
 
 
 ==========
@@ -121,7 +160,7 @@ Use the command called cat on the file to show its contents.
 Describe what happened below.
 ----------
 
-
+The entire story comes up.
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -132,8 +171,7 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
-
+Title: The Prince
 
 ==========
 18. Using the same file again!
@@ -145,7 +183,17 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
+student$ tail pg1232.txt
 
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 ==========
 19. Using the same file...
@@ -157,6 +205,7 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
 
+Basically, When you press space it goes down the lines proportionally but when you press Q it goes back to the top.
 
 
 ==========
@@ -164,15 +213,20 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+less=
+more=
+cat=
+tail=
+head=
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
-
-
+other student$ wc -w pg1232.txt
+   52639 pg1232.txt
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+wc -l pg1232.txt
+    5063 pg1232.txt
