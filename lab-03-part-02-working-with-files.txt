@@ -213,18 +213,11 @@ Basically, When you press space it goes down the lines proportionally but when y
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-less=
-more=
-cat=
-tail=
-head=
-
-
-==========
-21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
-----------
-other student$ wc -w pg1232.txt
-   52639 pg1232.txt
+less=Show the contents of a file with pagination. 
+head=think head is the beginning / top of the file
+More=Show the contents of a file with pagination. 
+cat=Show all of the contents of a file 
+tail=tail is the end of the file
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
